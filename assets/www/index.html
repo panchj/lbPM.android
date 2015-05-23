@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+    <title>智能建筑系统移动端入口</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/customerCSS.css" />
+
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/mainAppJS.js"></script>
+
+</head>
+
+<body>
+    <div data-role="page">
+        <div class="homeApp">
+            <div id="logonForm"></div>
+            <a href="appPortal.html"> 进入系统 </a>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            setLogonForm();
+        });
+
+        // 检查当前用户的资料
+        function checkAppUser(){
+        }
+
+        // 用户登录系统的页面元素
+        function setLogonForm(){
+            var lString="<h4>请输入用户名和密码</h4>";
+            document.getElementById('logonForm').innerHTML = lString;
+        }
+
+        // 合法用户直接登录
+        function logonForm(){
+        }
+
+    </script>
+</body>
+</html>
